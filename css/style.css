@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;700&display=swap');
+
+:root{
+    --bg-color: #000000;
+    --color-1: #04D361;
+    --color-2: #6A6A6A;
+    --color-3: #FFFFFF;
+    --color-4: #8257E5;
+    --color-text-email: #A8A8A8;
+    --fonte-comum: 'League Spartan', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: url(../assets/read_news.jpg) no-repeat;
+    background-size: cover;
+    background-position: top right; 
+    background-size: 1175px;
+    /*DESFOQUE DA IMAGEM*/
+    backdrop-filter: blur(0.1em);
+    border: none;
+}
+
+/* CONTAINER */
+
+.container{
+    background-color: var(--bg-color);
+    width: 50vw;
+    height: 100vh;
+}
+
+.container .logo{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.container .logo > img{
+    width: 389px;
+    height: 94px;
+}
+
+/* SECTION 1 */
+
+.container .section-1 {
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.container .section-1 h1{
+    text-transform: lowercase;
+    color: var(--color-1);
+    font-family: var(--fonte-comum);
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.container .section-1 h2{
+    text-transform: lowercase;
+    color: var(--color-3);
+    font-family: var(--fonte-comum);
+    font-weight: bold;
+    font-size: 1.27em;
+    padding-bottom: 10px;
+}
+
+.container .section-1 p{
+    font-family: var(--fonte-comum);
+    color: var(--color-3);
+    font-weight: 100;
+    text-transform: lowercase;
+    line-height: 18px;
+}
+
+/* SECTION 2 */
+
+.container .section-2{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.container .section-2 i{
+    background-color: var(--color-4);
+    background-size: 90px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.container .section-2 input{
+    display: inline-block;
+    vertical-align: middle;
+    align-content: center;
+    border: none;
+    border-left: 5px solid var(--color-1);
+    text-decoration: none;
+    padding: 17px;
+    width: 800px;
+    box-shadow: 5px 3px 22px -7px rgba(117,117,117,1);
+}
+
+.container .section-2 input:hover{
+    box-shadow: 5px 3px 22px -7px rgba(255,255,255,1);
+    transition: 3s;
+}
+
+.container .section-2 input::placeholder{
+    font-size: 11px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* SECTION-3 */
+
+.container .section-3{
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+.container .section-3 a{
+    text-decoration: none;
+    font-family: var(--fonte-comum);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.container .section-3 a:hover{
+    color: var(--color-3);
+    transition: 1s;
+    cursor: default;
+}
